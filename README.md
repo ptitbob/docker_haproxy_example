@@ -20,6 +20,6 @@ Ce proxy permet aussi de load balancer en affectant un poids à chacun des serve
 
 La configuration estt défini dans le fichier ```haproxy/haproxy.cfg```, le load balancing est décrit dans la section ```backend nginx```, la section ```listen admin``` permet d'exposer une interface admin permettant de visualiser les accès aux serveurs exposés.
 
-###2. Serveur nains
+###2. Serveur nginx
 
 Les serveur nginx sont configurés pour permettre de désactiver le cache nginx et de pouvoir modifier les fichiers du site en temps réel. Pour permettre cela, il faut intégrer dans la configuration l'instruction ```sendfile  off``` dans la section http du fichier de configuration nginx.
